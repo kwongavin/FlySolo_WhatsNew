@@ -1,7 +1,28 @@
-/* 
-  whatsnewdata.json
-  FirebaseWhatsNew
-
-  Created by Gavin Kwon on 10/4/23.
-  
-*/
+[{
+    "id":0,
+    "whatsNewImageURL":"SomeURL",
+    "whatsNewTitle":"SomeTitle",
+    "whatsNewText":"SomeText",
+    "whatsNewLink":"SomeLink",
+    "whatsNewBgColor":"SomeBgColor",
+    "whatsNewTextColor":"SomeTextColor"
+},
+    {
+        "id":1,
+        "whatsNewImageURL":"SomeURL2",
+        "whatsNewTitle":"SomeTitle2",
+        "whatsNewText":"SomeText2",
+        "whatsNewLink":"SomeLink2",
+        "whatsNewBgColor":"SomeBgColor2",
+        "whatsNewTextColor":"SomeTextColor2"
+    },
+    {
+        "id":2,
+        "whatsNewImageURL":"SomeURL3",
+        "whatsNewTitle":"SomeTitle3",
+        "whatsNewText":"SomeText3",
+        "whatsNewLink":"SomeLink3",
+        "whatsNewBgColor":"SomeBgColor3",
+        "whatsNewTextColor":"SomeTextColor3"
+    }
+]

@@ -18,7 +18,7 @@ class WhatsNewModel: ObservableObject {
     
     func getRemoteData() {
         
-        let urlString = "https://codewithchris.github.io/learningapp-data/whatsnewdata.json"
+        let urlString = "https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/whatsnewdata.json"
         
         let url = URL(string: urlString)
         

@@ -12,6 +12,7 @@ struct FirebaseWhatsNew: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(WhatsNewModel())
         }
     }
 }

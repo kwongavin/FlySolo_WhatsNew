@@ -19,18 +19,18 @@ struct WhatsNewArticle: Decodable, Identifiable {
     var whatsNewTextColor: String?
     
     var backgroundUIColor: Color? {
-            if let bgColor = whatsNewBgColor {
-                return Color(hex: bgColor)
-            }
-            return nil
+        if let bgColor = whatsNewBgColor {
+            return Color(hex: bgColor)
         }
-
-        var textUIColor: Color? {
-            if let textColor = whatsNewTextColor {
-                return Color(hex: textColor)
-            }
-            return nil
+        return nil
+    }
+    
+    var textUIColor: Color? {
+        if let textColor = whatsNewTextColor {
+            return Color(hex: textColor)
         }
+        return nil
+    }
     
 }
 
@@ -38,7 +38,7 @@ extension Color {
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
-
+        
         Scanner(string: hex).scanHexInt64(&int)
         let a, r, g, b: UInt64
         switch hex.count {
@@ -51,7 +51,7 @@ extension Color {
         default:
             (a, r, g, b) = (255, 0, 0, 0)
         }
-
+        
         self.init(
             .sRGB,
             red: Double(r) / 255,
