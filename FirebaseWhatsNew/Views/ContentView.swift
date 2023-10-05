@@ -6,22 +6,52 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject var model: WhatsNewModel
+    @ObservedObject var model: WhatsNewModel
+    
+    let screenWidth = UIScreen.main.bounds.size.width
+    let screenHeight = UIScreen.main.bounds.size.height
     
     var body: some View {
         VStack {
-            ForEach(model.articles) { article in
-                Text(article.whatsNewText)
+            GeometryReader { geo in
+                TabView {
+                    ForEach(model.articles) { article in
+                        VStack {
+                            if article.whatsNewImageURL != nil {
+                                WebImage(url: URL(string: article.whatsNewImageURL ?? ""))
+                                    .resizable()
+                                    .placeholder {
+                                        Rectangle()
+                                            .frame(width: geo.size.width*0.9, height: 100)
+                                            .cornerRadius(10)
+                                            .opacity(0.1)
+                                            .padding(.top)
+                                    }
+                            }
+                            VStack(spacing: geo.size.width*0.01) {
+                                Text(article.whatsNewTitle ?? "")
+                                    .bold()
+                                Text(article.whatsNewText)
+                            }
+                            .padding(.top)
+                            .frame(maxHeight: .infinity, alignment: .top)
+                            .font(Font.custom("Avenir Roman", size: geo.size.width*0.045))
+                        }
+                        .padding()
+                    }
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+                .background(Color.blue.opacity(0.1))
             }
         }
-        .padding()
+        .frame(width: screenWidth, height: screenHeight*0.4)
     }
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(WhatsNewModel())
+    ContentView(model: WhatsNewModel())
 }

@@ -1,7 +1,7 @@
 [{
     "id":0,
-    "whatsNewImageURL":"SomeURL",
-    "whatsNewTitle":"SomeTitle",
+    "whatsNewImageURL":"https://images.pexels.com/photos/5372612/pexels-photo-5372612.jpeg",
+    "whatsNewTitle":"FlySolo released on Apple App Store!",
     "whatsNewText":"SomeText",
     "whatsNewLink":"SomeLink",
     "whatsNewBgColor":"SomeBgColor",

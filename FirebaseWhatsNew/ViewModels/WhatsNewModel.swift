@@ -6,11 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
 class WhatsNewModel: ObservableObject {
     
     @Published var articles = [WhatsNewArticle]()
-    
     
     init() {
         getRemoteData()
