@@ -31,15 +31,18 @@ struct ContentView: View {
                                             .opacity(0.1)
                                             .padding(.top)
                                     }
+                                    .cornerRadius(10)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: 100)
                             }
-                            VStack(spacing: geo.size.width*0.01) {
-                                Text(article.whatsNewTitle ?? "")
+                            VStack(spacing: geo.size.width*0.03) {
+                                Text("Finally, Available on Apple App Store!")
                                     .bold()
-                                Text(article.whatsNewText)
+                                Text("Thanks for installing FlySolo. Now, spread the word to your musician buds and drop us a stellar review! Your positive feedback will make us do the happy dance. 🕺💃") // article.whatsNewText
                             }
                             .padding(.top)
                             .frame(maxHeight: .infinity, alignment: .top)
-                            .font(Font.custom("Avenir Roman", size: geo.size.width*0.045))
+                            .font(Font.custom("Avenir Roman", size: geo.size.width*0.043))
                         }
                         .padding()
                     }
