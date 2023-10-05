@@ -22,18 +22,19 @@ struct ContentView: View {
                     ForEach(model.articles) { article in
                         VStack {
                             if article.whatsNewImageURL != nil {
-                                WebImage(url: URL(string: article.whatsNewImageURL ?? ""))
-                                    .resizable()
-                                    .placeholder {
-                                        Rectangle()
-                                            .frame(width: geo.size.width*0.9, height: 100)
-                                            .cornerRadius(10)
-                                            .opacity(0.1)
-                                            .padding(.top)
-                                    }
-                                    .cornerRadius(10)
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(height: 100)
+                                Link(destination: URL(string: article.whatsNewLink ?? "")!, label: {
+                                    WebImage(url: URL(string: article.whatsNewImageURL ?? ""))
+                                        .resizable()
+                                        .placeholder {
+                                            Rectangle()
+                                                .frame(width: geo.size.width*0.9, height: 100)
+                                                .cornerRadius(10)
+                                                .opacity(0.1)
+                                        }
+                                        .cornerRadius(10)
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(height: 100)
+                                })
                             }
                             VStack(spacing: geo.size.width*0.03) {
                                 Text(article.whatsNewTitle ?? "")
