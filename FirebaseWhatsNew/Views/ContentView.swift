@@ -22,19 +22,23 @@ struct ContentView: View {
                     ForEach(model.articles) { article in
                         VStack {
                             if article.whatsNewImageURL != nil {
-                                Link(destination: URL(string: article.whatsNewLink ?? "")!, label: {
-                                    WebImage(url: URL(string: article.whatsNewImageURL ?? ""))
-                                        .resizable()
-                                        .placeholder {
-                                            Rectangle()
-                                                .frame(width: geo.size.width*0.9, height: 100)
-                                                .cornerRadius(10)
-                                                .opacity(0.1)
-                                        }
-                                        .cornerRadius(10)
-                                        .aspectRatio(contentMode: .fit)
-                                        .frame(height: 100)
-                                })
+                                if let url = URL(string: article.whatsNewLink ?? "") ?? URL(string: "https://") {
+                                    Link(destination: url, label: {
+                                        WebImage(url: URL(string: article.whatsNewImageURL ?? ""))
+                                            .resizable()
+                                            .placeholder {
+                                                Rectangle()
+                                                    .frame(width: geo.size.width*0.9, height: 100)
+                                                    .cornerRadius(10)
+                                                    .opacity(0.1)
+                                            }
+                                            .cornerRadius(10)
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(height: 100)
+                                    })
+                                }
+//                                Link(destination: URL(string: article.whatsNewLink ?? "")!, label: {
+//                                })
                             }
                             VStack(spacing: geo.size.width*0.03) {
                                 Text(article.whatsNewTitle ?? "")
