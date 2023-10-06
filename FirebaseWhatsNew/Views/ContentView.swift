@@ -11,6 +11,7 @@ import SDWebImageSwiftUI
 struct ContentView: View {
     
     @ObservedObject var model: WhatsNewModel
+    @State private var whatsNewIndex = 0
     
     let screenWidth = UIScreen.main.bounds.size.width
     let screenHeight = UIScreen.main.bounds.size.height
@@ -18,7 +19,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             GeometryReader { geo in
-                TabView {
+                TabView(selection: $whatsNewIndex) {
                     ForEach(model.articles) { article in
                         VStack {
                             if article.whatsNewImageURL != nil {
@@ -52,8 +53,10 @@ struct ContentView: View {
                         .padding()
                     }
                 }
-                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
-                .background(Color.blue.opacity(0.05))
+                .background(Color("bgColor4").opacity(0.4))
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                CustomPagingIndicator(currentIndex: whatsNewIndex, total: model.articles.count)
+                    .position(x: screenWidth / 2, y: screenHeight * 0.45)
             }
         }
         .frame(width: screenWidth, height: screenHeight*0.4)

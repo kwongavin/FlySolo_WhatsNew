@@ -42,6 +42,7 @@
 		863BC7642ACE164F004E8541 /* WhatsNewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863BC7632ACE164F004E8541 /* WhatsNewModel.swift */; };
 		863BC7682ACE1ADB004E8541 /* whatsnewdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 863BC7672ACE1ADB004E8541 /* whatsnewdata.json */; };
 		863BC76B2ACE733C004E8541 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 863BC76A2ACE733C004E8541 /* SDWebImageSwiftUI */; };
+		863BC7792AD0C835004E8541 /* CustomPagingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863BC7782AD0C835004E8541 /* CustomPagingIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		863BC7612ACE0E96004E8541 /* WhatsNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNew.swift; sourceTree = "<group>"; };
 		863BC7632ACE164F004E8541 /* WhatsNewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsNewModel.swift; sourceTree = "<group>"; };
 		863BC7672ACE1ADB004E8541 /* whatsnewdata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = whatsnewdata.json; sourceTree = "<group>"; };
+		863BC7782AD0C835004E8541 /* CustomPagingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPagingIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				863BC7292ACE0D87004E8541 /* Views */,
 				863BC7282ACE0D82004E8541 /* ViewModels */,
 				863BC7272ACE0D7D004E8541 /* Models */,
+				863BC7772AD0C82C004E8541 /* Common */,
 				863BC71D2ACE0D60004E8541 /* Assets.xcassets */,
 				863BC71F2ACE0D60004E8541 /* Preview Content */,
 				863BC7672ACE1ADB004E8541 /* whatsnewdata.json */,
@@ -154,6 +157,14 @@
 				863BC71B2ACE0D5F004E8541 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		863BC7772AD0C82C004E8541 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				863BC7782AD0C835004E8541 /* CustomPagingIndicator.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863BC7792AD0C835004E8541 /* CustomPagingIndicator.swift in Sources */,
 				863BC7642ACE164F004E8541 /* WhatsNewModel.swift in Sources */,
 				863BC71C2ACE0D5F004E8541 /* ContentView.swift in Sources */,
 				863BC71A2ACE0D5F004E8541 /* FirebaseWhatsNew.swift in Sources */,
