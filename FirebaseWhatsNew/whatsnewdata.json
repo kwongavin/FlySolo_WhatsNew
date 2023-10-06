@@ -4,7 +4,7 @@
     "whatsNewTitle":"Finally, Available on Apple App Store!",
     "whatsNewText":"Thanks for installing FlySolo. Now, spread the word to your musician buds, and drop us a stellar review! Your positive feedback will make us do the happy dance. 🕺💃",
     "whatsNewLink":"SomeLink1",
-    "whatsNewBgColor":"SomeBgColor",
+    "whatsNewBgColor":"333333",
     "whatsNewTextColor":"SomeTextColor"
 },
     {
@@ -13,7 +13,7 @@
         "whatsNewTitle":"Explore Font Styles for Your App",
         "whatsNewText":"You can select your app font from our curated minimalist collection. Let's dive deeper into the options. 👀",
         "whatsNewLink":"SomeLink2",
-        "whatsNewBgColor":"SomeBgColor2",
+        "whatsNewBgColor":"666666",
         "whatsNewTextColor":"SomeTextColor2"
     },
     {
@@ -22,7 +22,7 @@
         "whatsNewTitle":"How Do I Create My App?",
         "whatsNewText":"Discover a step-by-step guide on creating and publishing your own music app with FlySolo. Join us on this journey!",
         "whatsNewLink":"SomeLink2",
-        "whatsNewBgColor":"SomeBgColor2",
+        "whatsNewBgColor":"FFFFFF",
         "whatsNewTextColor":"SomeTextColor2"
     }
 ]
