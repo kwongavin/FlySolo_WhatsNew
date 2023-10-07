@@ -38,22 +38,21 @@ struct ContentView: View {
                                             .frame(height: 100)
                                     })
                                 }
-//                                Link(destination: URL(string: article.whatsNewLink ?? "")!, label: {
-//                                })
                             }
-                            VStack(spacing: geo.size.width*0.03) {
+                            VStack(spacing: geo.size.width*0.04) {
                                 Text(article.whatsNewTitle ?? "")
                                     .bold()
                                 Text(article.whatsNewText)
                             }
-                            .padding(.top, 10)
 //                            .frame(maxHeight: .infinity, alignment: .top)
+                            .padding(.top, 10)
                             .font(Font.custom("Avenir Roman", size: geo.size.width*0.043))
+                            .lineSpacing(geo.size.height*0.005)
                         }
                         .padding()
                     }
                 }
-                .background(Color("bgColor4").opacity(0.4))
+                .background(Color("appColor3").opacity(0.1))
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 CustomPagingIndicator(currentIndex: whatsNewIndex, total: model.articles.count)
                     .position(x: screenWidth / 2, y: screenHeight * 0.45)
