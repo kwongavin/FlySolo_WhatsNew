@@ -18,7 +18,7 @@
     },
     {
         "id":2,
-        "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage2.imageset/articleImage3.png",
+        "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage3.imageset/articleImage3.png",
         "whatsNewTitle":"Where do I begin? An A to Z Guide.",
         "whatsNewText":"Discover a step-by-step guide on creating and publishing your own music app with FlySolo. Join us on this journey!",
         "whatsNewLink":"SomeLink2",
