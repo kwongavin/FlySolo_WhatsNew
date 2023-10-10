@@ -3,7 +3,7 @@
     "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage1.imageset/articleImage1.png",
     "whatsNewTitle":"Finally, Available on Apple App Store!",
     "whatsNewText":"Thanks for installing FlySolo. Now, spread the word to your musician buds, and drop us a stellar review! Your positive feedback will make us do the happy dance. 🕺💃",
-    "whatsNewLink":"SomeLink1",
+    "whatsNewLink":"https://gavinkwon.com",
     "whatsNewBgColor":"333333",
     "whatsNewTextColor":"SomeTextColor"
 },
@@ -12,7 +12,7 @@
         "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage2.imageset/articleImage2.png",
         "whatsNewTitle":"Explore Font Styles for Your App",
         "whatsNewText":"You can select your app font from our curated minimalist collection. Let's dive deeper into the options. 👀",
-        "whatsNewLink":"SomeLink2",
+        "whatsNewLink":"https://gavinkwon.com/flysolofont",
         "whatsNewBgColor":"666666",
         "whatsNewTextColor":"SomeTextColor2"
     },
@@ -21,7 +21,7 @@
         "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage3.imageset/articleImage3.png",
         "whatsNewTitle":"Where do I begin? An A to Z Guide.",
         "whatsNewText":"Discover a step-by-step guide on creating and publishing your own music app with FlySolo. Join us on this journey!",
-        "whatsNewLink":"SomeLink2",
+        "whatsNewLink":"https://gavinkwon.com/flysologuide",
         "whatsNewBgColor":"FFFFFF",
         "whatsNewTextColor":"SomeTextColor2"
     }
