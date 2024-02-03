@@ -10,7 +10,7 @@
     {
         "id":1,
         "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage4.imageset/articleImage4.png",
-        "whatsNewTitle":"Exploring Font Styles for Your App",
+        "whatsNewTitle":"Explore Font Styles for Your App",
         "whatsNewText":"You can select your app font from our curated minimalist collection. Let's dive deeper into the options. 👀",
         "whatsNewLink":"https://gavinkwon.com/flysolofont",
         "whatsNewBgColor":"666666",
