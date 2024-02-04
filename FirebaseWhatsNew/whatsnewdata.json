@@ -1,6 +1,6 @@
 [{
     "id":0,
-    "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage1.imageset/articleImage1.png",
+    "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/image1.imageset/image1.png",
     "whatsNewTitle":"Post a Review and Help Us Grow!",
     "whatsNewText":"Thanks for installing FlySolo. Now, spread the word to your musician buds, and drop us a stellar review! Your positive feedback will make us do the happy dance. 🕺💃",
     "whatsNewLink":"https://apps.apple.com/us/app/flysolo/id6471043945",
@@ -9,7 +9,7 @@
 },
     {
         "id":1,
-        "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage2.imageset/articleImage2.png",
+        "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/image2.imageset/image2.png",
         "whatsNewTitle":"Exploring Font Styles for Your App",
         "whatsNewText":"You can select your app font from our curated minimalist collection. Let's dive deeper into the options. 👀",
         "whatsNewLink":"https://gavinkwon.com/flysolofont",
@@ -18,7 +18,7 @@
     },
     {
         "id":2,
-        "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/articleImage3.imageset/articleImage3.png",
+        "whatsNewImageURL":"https://raw.githubusercontent.com/kwongavin/FlySolo_WhatsNew/main/FirebaseWhatsNew/Assets.xcassets/image3.imageset/image3.png",
         "whatsNewTitle":"Where do I begin? An A to Z Guide.",
         "whatsNewText":"Discover a step-by-step guide on creating and publishing your own music app with FlySolo. Join us on this journey!",
         "whatsNewLink":"https://gavinkwon.com/flysologuide",
